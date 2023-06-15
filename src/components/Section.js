@@ -26,11 +26,12 @@ const SectionTitleGroup = styled.div`
     max-width: 800px;
     margin: 0 40px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 150px;
     grid-template-columns: 300px auto;
     grid-template-rows: auto 100%;
 
     @media (max-width: 720px) {
+        grid-gap: 20px;
         grid-template-columns: 1fr;
     }
 `

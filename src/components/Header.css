@@ -24,6 +24,13 @@
 .Header a {
     color: white;
     font-weight: 700;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Header a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
 }
 
 .Header button {
@@ -36,7 +43,6 @@
     outline: none;
     cursor: pointer;
     transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-    
 }
 
 .Header button:hover {
