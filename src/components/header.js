@@ -49,11 +49,7 @@
 import React from 'react'
 import './Header.css'
 import logo from '../images/logo-react.png';
-<<<<<<< HEAD
-import {Link} from 'gatsby-link'
-=======
 import Link from 'gatsby-link'
->>>>>>> 4ac9ff5 (Everything working, before react flow install)
 
 
 class Header extends React.Component {

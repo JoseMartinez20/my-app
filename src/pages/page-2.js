@@ -12,11 +12,7 @@
 // export default SecondPage
 
 import React from 'react'
-<<<<<<< HEAD
-// import ChatBox from './ChatBox';
-=======
 import ChatBox from './chatbox';
->>>>>>> 4ac9ff5 (Everything working, before react flow install)
 import Wave from '../components/Wave';
 import '../layouts/page-2.css'
 
@@ -27,11 +23,7 @@ const SecondPage = () => (
     <h1>Evavi CustomerGPT Email</h1>
     <p>This is what I have so far.</p>
     <h2>Ask Evavi</h2>
-<<<<<<< HEAD
-    {/* <ChatBox /> */}
-=======
     <ChatBox />
->>>>>>> 4ac9ff5 (Everything working, before react flow install)
     <Wave />
   </div>
 </div>

@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Card from '../components/Card';
 import Section from '../components/Section';
 import Wave from '../components/Wave';
-import {Link} from 'gatsby-link';
+// import {Link} from 'gatsby-link';
 
 
 const IndexPage = () => (
