@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 .chat-container {}
+=======
+.chat-container {
+    
+}
+>>>>>>> 4ac9ff5 (Everything working, before react flow install)
 
 .query-box {
     display: flex;

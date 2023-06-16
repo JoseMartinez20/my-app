@@ -1,3 +1,5 @@
+// 
+
 import React from 'react'
 import styled from 'styled-components'
 import Wave from './Wave'
@@ -47,8 +49,9 @@ const SectionTitle = styled.h3`
     }
 `
 
+
 const SectionText = styled.p`
-    color: white;
+    color: white;    
 `
 
 const WaveTop = styled.div`

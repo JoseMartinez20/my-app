@@ -1,5 +1,6 @@
 import React from 'react'
-import ChatBox from './chatbox';
+import Link from 'gatsby-link'
+// import ChatBox from './ChatBox';
 import Card from '../components/Card';
 import Section from '../components/Section';
 import Wave from '../components/Wave';
@@ -12,12 +13,16 @@ const IndexPage = () => (
       <div className='HeroGroup'>
         <h1>React Playground</h1>
         <p>This site is a playground for all of Jose's React projects.</p>
-        <h2>This week's projects</h2>
+        <h2>Projects</h2>
         <Link to='/page-2/'>CustomerGPT Email</Link>
         <Link to='/react-flow-mockup'>React Flow Mockup</Link>
         <Wave />
       </div>
     </div>
+
+    {/* <div style={{ marginTop: '20px' }}>
+      <ChatBox />
+    </div> */}
     <div className='Cards'>
       <h2>3 projects, more coming</h2>
       <div className='CardGroup'>
@@ -30,11 +35,11 @@ const IndexPage = () => (
         </Link>
 
         <Link to='/react-flow-mockup'>
-        <Card
-          title="Digital Twin Project"
-          text="To do"
-          image={require('../images/react-flow.svg')}
-        />
+          <Card
+            title="Digital Twin Project"
+            text="To do"
+            image={require('../images/react-flow.svg')}
+          />
         </Link>
 
         <Card
@@ -47,8 +52,12 @@ const IndexPage = () => (
 
     <Section
       image={require('../images/wallpaper2.jpg')}
-      title="CustomerGPT Email"
-      text={<ChatBox />} />
+      logo={require('../images/logo-react.png')}
+      title="Resources"
+      text={<div>
+        <p>Most of the design and UI techniques I exmployed in this website, I learned from</p>
+        <a href="https://designcode.io" target="_blank">Design+Code</a>
+      </div>} />
   </div>
 )
 
