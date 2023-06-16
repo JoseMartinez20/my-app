@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import logo from '../images/logo-react.png';
 import './Header.css'
+import logo from '../images/logo-react.png';
+import {Link} from 'gatsby-link'
 
 
 class Header extends React.Component {
@@ -20,10 +20,10 @@ class Header extends React.Component {
   handleScroll = (event) => {
     const scrollTop = window.pageYOffset
 
-    if (scrollTop > 50) {
-      this.setState({ hasScrolled: true})
+    if (scrollTop > 0) {
+      this.setState({ hasScrolled: true })
     } else {
-      this.setState({ hasScrolled: false})
+      this.setState({ hasScrolled: false })
     }
   }
 
@@ -33,7 +33,7 @@ class Header extends React.Component {
         <div className='HeaderGroup'>
           <Link to='/'><img src={logo} width='30' /></Link>
           <Link to='/page-2'>CustomerGPT Email</Link>
-          <Link to='/downloads'>Digital Twin Project</Link>
+          <Link to='/react-flow-mockup'>Digital Twin Mockup</Link>
           <Link to='/workshops'>AG Grid Project</Link>
         </div>
       </div>

@@ -9,7 +9,7 @@ const SectionGroup = styled.div`
     height: 720px;
     display: grid;
     grid-template-rows: 300px auto;
-    grid-gap: 20px;
+    grid-gap: 0px;
     position: relative;
 
     @media (max-width: 640px) {
@@ -24,14 +24,14 @@ const SectionLogo = styled.img`
 
 const SectionTitleGroup = styled.div`
     max-width: 800px;
-    margin: 0 40px;
+    margin: -140px 40px;
     display: grid;
-    grid-gap: 150px;
-    grid-template-columns: 300px auto;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 100%;
+    align-self: end;
 
     @media (max-width: 720px) {
-        grid-gap: 20px;
         grid-template-columns: 1fr;
     }
 `
@@ -68,7 +68,6 @@ const Section = props => (
     <SectionGroup image={props.image}>
         <WaveBottom><Wave /></WaveBottom>
         <WaveTop><Wave /></WaveTop>
-        <SectionLogo src={props.logo} />
         <SectionTitleGroup>
             <SectionTitle>{props.title}</SectionTitle>
             <SectionText>{props.text}</SectionText>

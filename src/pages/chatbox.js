@@ -45,6 +45,7 @@ class ChatBox extends React.Component {
     this.textareaRef.removeEventListener("keydown", this.handleKeyDown);
   }
 
+
   render() {
     const { responses } = this.state;
 
@@ -60,21 +61,10 @@ class ChatBox extends React.Component {
                 type="text"
                 rows="1"
                 placeholder="What can I answer for you today?"
-                style={{
-                  display: 'flex',
-                  width: '100%',
-                  padding: '10px',
-                  lineHeight: '1.5',
-                  border: '1px solid #ccc',
-                  borderRadius: '4px',
-                  boxSizing: 'border-box',
-                  resize: 'vertical',
-                  height: 'auto',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
-                  fontSize: '14px',
-                }}
-              ></textarea>
-              <button type="submit">Submit</button>
+              />
+              <button className='button' type="submit">
+                Submit
+              </button>
             </div>
           </form>
           {responses.map((response, index) => (
